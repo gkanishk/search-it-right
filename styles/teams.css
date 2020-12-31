@@ -54,3 +54,12 @@ button:active,
 button:focus{
     background-color: #48d1c4;
 }
+
+@media (max-width:660px){
+    .card-container{
+        width: 100%;
+      }
+      .team-card{
+        margin: 1rem auto;
+      }
+}
