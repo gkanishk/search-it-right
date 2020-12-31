@@ -58,7 +58,11 @@ export default function SearchPage(){
                     ?
                     (type=="Player"
                     ?
-                    <PlayerCard playersData={data}/>
+                    data.map(data=>{
+                        return (
+                            <PlayerCard playersData={data}/>
+                        );
+                    })
                     :
                     <TeamCard teamdata={data}/>)
                     :

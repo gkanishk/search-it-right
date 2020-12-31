@@ -4,7 +4,7 @@ import TeamCard from "../../components/cards/teamCard";
 
 export default function TeamsPage(){
     const [result, setResult] = useState("");
-    const [data, setData] = useState(team);
+    const [data, setData] = useState([]);
     useEffect(() => {
         if(result==""){
             setData([]);
@@ -29,6 +29,7 @@ export default function TeamsPage(){
             <input 
             onChange={e=>setResult(e.target.value)}
             placeholder="Search Data 🔍"
+            value={result}
             ></input>
             {
             result?
@@ -37,21 +38,42 @@ export default function TeamsPage(){
             </h3>
             :
             <></>}
-            {/* Show Search Data */}
+            <div className="card-container">
+            {/* Search Data */}
             {
                 result
                 ?
                     data.length!=0
                     ?
-                    <TeamCard teamdata={data}/>
+                    data.map(data=>{
+                        return (
+                            <TeamCard 
+                            playersData={data}
+                            index={team.indexOf(data)}
+                            />
+                        );
+                    })
                     :
                     <h4>
                         No Data found
                     </h4>
+                    
                 :<></>
             }
-            {/* Show All Data */}
-            <TeamCard teamdata={team}/>
+        </div>
+        <div className="card-container">
+            {/* All team's data */}
+            {
+                team.map(data=>{
+                            return (
+                                <TeamCard 
+                                playersData={data}
+                                index={team.indexOf(data)}
+                                />
+                            );
+                        })
+            } 
+            </div>            
         </section>
     );
 }

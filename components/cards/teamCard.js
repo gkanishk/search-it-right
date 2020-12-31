@@ -10,27 +10,22 @@ export default function TeamCard(props){
         return "#FEC23D";
     }
     return (
-    <div className="card-container">
-        {props.teamdata.map(data=>{
-            return (
-            <div 
+        <div 
             className="team-card" 
-            style={{backgroundColor:getColor(props.teamdata.indexOf(data))}}
-            key={data.name}
+            style={{backgroundColor:getColor(props.index)}}
+            key={props.playersData.name}
             >
             <img src="/logo.jpg" alt="logo ipl"></img>
-            <h3>{data.name}</h3>
+            <h3>{props.playersData.name}</h3>
             <button className="button-main">
                 <a
                 rel="noopener noreferrer"
-                href={`https://www.google.com/search?q=${data.name}`} 
+                href={`https://www.google.com/search?q=${props.playersData.name}`} 
                 target="_blank"
                 >
                 More Info
                 </a>                    
             </button>
-        </div>  
-            )
-        })}
-    </div>);
+        </div>
+    );
 }

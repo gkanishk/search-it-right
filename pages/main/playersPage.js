@@ -4,7 +4,7 @@ import {useEffect, useState} from 'react';
 
 export default function PlayersPage(){
     const [result, setResult] = useState("");
-    const [data, setData] = useState(player);
+    const [data, setData] = useState([]);
     useEffect(() => {
         if(result==""){
             setData([]);
@@ -37,21 +37,41 @@ export default function PlayersPage(){
             </h3>
             :
             <></>}
+            <div className="player-card-container">
             {/* Search Data */}
             {
                 result
                 ?
                     data.length!=0
                     ?
-                    <PlayerCard playersData={data}/>
+                    data.map(data=>{
+                        return (
+                            <PlayerCard 
+                            playersData={data}
+                            index={player.indexOf(data)}
+                            />
+                        );
+                    })
                     :
                     <h4>
                         No Data found
                     </h4>
                 :<></>
             }
+            </div>
+            <div className="player-card-container">
             {/* All player's data */}
-            <PlayerCard playersData={player}/>     
+            {
+                player.map(data=>{
+                            return (
+                                <PlayerCard 
+                                playersData={data}
+                                index={player.indexOf(data)}
+                                />
+                            );
+                        })
+            } 
+            </div>            
         </section>
     );
 }
