@@ -36,7 +36,7 @@ After optimising that gave a light house score time **1.8sec-2.4sec** scoring li
 - Removed un-used modules.  
 
 
-<img src="/pagescore.jpg" alt="score" class="score-img">
+<img src="https://raw.githubusercontent.com/gkanishk/search-it-right/main/public/pagescore.jpg" alt="score" class="score-img">
 
 
 ## Deploy on Vercel
