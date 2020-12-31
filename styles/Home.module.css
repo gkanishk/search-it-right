@@ -1,10 +1,33 @@
 .container {
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.nav{
+  width: 100%;
+  height: 10vh;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0rem 1rem;
+  align-items: center;
+}
+
+.nav .navlogo{
+  height: 2.5rem;
+  margin-right: auto
+}
+
+.nav a{
+  margin: 0.5rem;
+}
+
+.nav a:hover{
+  text-decoration: underline;
 }
 
 .main {
@@ -18,7 +41,7 @@
 
 .footer {
   width: 100%;
-  height: 100px;
+  height: 10vh;
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
