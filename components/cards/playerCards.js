@@ -5,7 +5,7 @@ export default function PlayerCard(props){
         else if(index%4==1)
         return "#599415";
         else if(index%4==2)
-        return "C75B0D";
+        return "#C75B0D";
         else
         return "#FEC23D";
     }
@@ -15,31 +15,32 @@ export default function PlayerCard(props){
                 {
                     props.playersData.map(data=>{
                         return (
-                            <div 
-                            className="player-card" 
-                            style={{backgroundColor:getColor(props.playersData.indexOf(data))}}
-                            key={data.name}
-                            >
-                                <div className="player-img-container">
-                                <img src="/man.svg" alt="person"/>
-                                <h3>
+                            <div className="players-card" style={{backgroundColor:getColor(props.playersData.indexOf(data))}}>
+                                <div className="players-img-container">
+                                    <img src="/man.svg" alt="person"/>
+                                    <h3>
                                         {data.name}
-                                </h3>
+                                    </h3>
                                 </div>
-                                <div className="player-info">
+                                <div className="players-info">
+                                    <strong>
+                                        Information
+                                    </strong>
                                     <span>
-                                        Date Of Birth: {data.DOB||"Not Available"}
-                                    </span>
-                                    <span>
-                                        Bowling Style: {data.Bowling_Skill||"Not Available"}
-                                    </span>
-                                    <span>
-                                        Batting Style: {data.Batting_Hand||"Not Availble"}
-                                    </span>
-                                    <span>
-                                        Country: {data.Country||"Not Available"}
-                                    </span>
-                                    <button>
+                                         Date Of Birth: {data.DOB||"Not Available"}
+                                     </span>
+                                     <span>
+                                         Bowling Style: {data.Bowling_Skill||"Not Available"}
+                                     </span>
+                                     <span>
+                                         Batting Style: {data.Batting_Hand||"Not Availble"}
+                                     </span>
+                                     <span>
+                                         Country: {data.Country||"Not Available"}
+                                     </span>
+                                </div>
+                                <div className="button-container">
+                                <button className="player-button">
                                         <a 
                                         href={`https://www.google.com/search?q=${data.name}`} 
                                         target="_blank"

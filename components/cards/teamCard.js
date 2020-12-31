@@ -20,7 +20,7 @@ export default function TeamCard(props){
             >
             <img src="/logo.jpg" alt="logo ipl"></img>
             <h3>{data.name}</h3>
-            <button>
+            <button className="button-main">
                 <a
                 rel="noopener noreferrer"
                 href={`https://www.google.com/search?q=${data.name}`} 
