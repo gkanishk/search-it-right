@@ -15,7 +15,10 @@ export default function PlayerCard(props){
                 {
                     props.playersData.map(data=>{
                         return (
-                            <div className="players-card" style={{backgroundColor:getColor(props.playersData.indexOf(data))}}>
+                            <div className="players-card" 
+                            style={{backgroundColor:getColor(props.playersData.indexOf(data))}}
+                            key={data.name}
+                            >
                                 <div className="players-img-container">
                                     <img src="/man.svg" alt="person"/>
                                     <h3>

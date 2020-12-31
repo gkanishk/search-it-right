@@ -2,76 +2,91 @@
  {
    "name": "Pune Warriors",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  },
  {
    "name": "Kolkata Knight Riders",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  },
  {
    "name": "Rajasthan Royals",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  },
  {
    "name": "Kochi Tuskers Kerala",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  },
  {
    "name": "Gujarat Lions",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  },
  {
    "name": "Chennai Super Kings",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  },
  {
    "name": "Rising Pune Supergiants",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  },
  {
    "name": "Delhi Daredevils",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  },
  {
    "name": "Deccan Chargers",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  },
  {
    "name": "Delhi Capitals",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  },
  {
    "name": "Mumbai Indians",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  },
  {
    "name": "Sunrisers Hyderabad",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  },
  {
    "name": "Rising Pune Supergiant",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  },
  {
    "name": "Royal Challengers Bangalore",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  },
  {
    "name": "Kings XI Punjab",
    "pic":"",
-   "url":""
+   "url":"",
+   "type":1
  }
 ]
