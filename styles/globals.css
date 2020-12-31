@@ -28,6 +28,9 @@ pre{
   background-color: #ecedee;
   padding: 0.5rem;
   border-radius: 7px;
+  width: max-content;
+  margin-right: auto;
+  text-align: justify;
 }
 
 .score-img{
@@ -36,4 +39,10 @@ pre{
   justify-self: center;
   align-self: center;
   margin: auto;
+}
+
+@media (max-width:660px){
+  pre{
+    font-size: 0.7rem;
+  }
 }

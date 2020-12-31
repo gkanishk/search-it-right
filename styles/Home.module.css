@@ -143,9 +143,22 @@
   padding: 1rem;
 }
 
+.markdown-container{
+  padding: 1rem;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .nav{
+    padding: 0rem 1rem;
+  }
+
+  .markdown-container{
+    padding: 1rem;
+    width: 95%;
   }
 }
