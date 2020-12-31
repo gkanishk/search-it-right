@@ -12,15 +12,15 @@ function MyApp({ Component, pageProps }) {
         Home
         </a>
       </Link>
-      <Link href="/main/teamsPage">
-      <a>
-        Teams
-      </a>
-      </Link>
       <Link href="/main/playersPage">
         <a>
         Players
         </a>
+      </Link>
+      <Link href="/main/teamsPage">
+      <a>
+        Teams
+      </a>
       </Link>
       <Link href="/main/searchPage">
         <a>
