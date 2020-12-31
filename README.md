@@ -31,7 +31,7 @@ After optimising that gave a light house score time **1.8sec-2.4sec** scoring li
 
 **Steps I took to optimise this app:**
 - Reduced image size to 90%.
-- Used components for comman components.
+- Used components for common components.
 - Used NextJs routing module for routers.
 - Removed un-used modules.  
 
