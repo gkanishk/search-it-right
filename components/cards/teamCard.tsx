@@ -18,7 +18,7 @@ export default function TeamCard(props:any){
             style={{backgroundColor:getColor(props.teamdata.indexOf(data))}}
             key={data.name}
             >
-            <img src="/logo.png"></img>
+            <img src="/logo.jpg" alt="logo ipl"></img>
             <h3>{data.name}</h3>
             <button>
                 <a 

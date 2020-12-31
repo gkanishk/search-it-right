@@ -21,7 +21,7 @@ export default function PlayerCard(props:any){
                             key={data.Player_Name}
                             >
                                 <div className="player-img-container">
-                                <img src="/man.svg"/>
+                                <img src="/man.svg" alt="person"/>
                                 <h3>
                                         {data.Player_Name}
                                 </h3>

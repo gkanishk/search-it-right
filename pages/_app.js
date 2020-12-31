@@ -1,23 +1,32 @@
 import '../styles/globals.css'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
     <nav className={styles.nav}>
-      <img src="/ipl.png" className={styles.navlogo}></img>
-      <a href="/">
+      <img src="/ipl.jpg" className={styles.navlogo} alt="ipl logo"></img>
+      <Link href="/">
+        <a>
         Home
-      </a>
-      <a href="/main/teamsPage">
+        </a>
+      </Link>
+      <Link href="/main/teamsPage">
+      <a>
         Teams
       </a>
-      <a href="/main/playersPage">
+      </Link>
+      <Link href="/main/playersPage">
+        <a>
         Players
-      </a>
-      <a href="/main/searchPage">
+        </a>
+      </Link>
+      <Link href="/main/searchPage">
+        <a>
         Search
-      </a>
+        </a>
+      </Link>
     </nav>
 
     <Component {...pageProps} />
