@@ -22,7 +22,7 @@ export default function TeamCard(props){
             <h3>{data.name}</h3>
             <button>
                 <a
-                rel="preconnect" 
+                rel="noopener noreferrer"
                 href={`https://www.google.com/search?q=${data.name}`} 
                 target="_blank"
                 >

@@ -43,7 +43,7 @@ export default function PlayerCard(props){
                                         <a 
                                         href={`https://www.google.com/search?q=${data.Player_Name}`} 
                                         target="_blank"
-                                        rel="preconnect"
+                                        rel="noopener noreferrer"
                                         >
                                         More Info
                                         </a>                    
