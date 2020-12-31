@@ -9,13 +9,13 @@ function MyApp({ Component, pageProps }) {
       <a href="/">
         Home
       </a>
-      <a href="/components/teamsPage">
+      <a href="/main/teamsPage">
         Teams
       </a>
-      <a href="/components/playersPage">
+      <a href="/main/playersPage">
         Players
       </a>
-      <a href="/components/searchPage">
+      <a href="/main/searchPage">
         Search
       </a>
     </nav>

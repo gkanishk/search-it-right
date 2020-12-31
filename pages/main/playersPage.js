@@ -1,5 +1,5 @@
 import player from "../../assests/players.json";
-import PlayerCard from "./cards/playerCards";
+import PlayerCard from "../../components/cards/playerCards";
 import {useEffect, useState} from 'react';
 
 export default function PlayersPage(){

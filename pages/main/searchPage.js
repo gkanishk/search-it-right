@@ -1,8 +1,8 @@
 import {useState, useEffect} from 'react';
 import team from '../../assests/teams.json';
 import player from '../../assests/players.json';
-import PlayerCard from './cards/playerCards';
-import TeamCard from './cards/teamCard';
+import PlayerCard from '../../components/cards/playerCards';
+import TeamCard from '../../components/cards/teamCard';
 
 export default function SearchPage(){
     const [result, setResult] = useState("");

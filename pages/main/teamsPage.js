@@ -1,6 +1,6 @@
 import team from "../../assests/teams.json";
 import {useEffect,useState} from 'react';
-import TeamCard from "./cards/teamCard";
+import TeamCard from "../../components/cards/teamCard";
 
 export default function TeamsPage(){
     const [result, setResult] = useState("");
