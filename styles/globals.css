@@ -23,3 +23,17 @@ a {
 input{
   padding: 0.5rem;
 }
+
+pre{
+  background-color: #ecedee;
+  padding: 0.5rem;
+  border-radius: 7px;
+}
+
+.score-img{
+  width: 80%;
+  border-radius: 5px;
+  justify-self: center;
+  align-self: center;
+  margin: auto;
+}

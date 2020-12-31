@@ -1,31 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Search It Right
+Search it right the only app you need to get all your IPL data.
 
-## Getting Started
+## Stacks used:
+- NextJs
+- React-Markdown
+- UI Framework??
+    - Ain't any it's all pure CSS.
 
-First, run the development server:
+
+## Installation
+
 
 ```bash
+git clone https://github.com/gkanishk/search-it-right
+cd search-it-right
+
+npm install
 npm run dev
 # or
+yarn install
 yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Load Time:
+Page resulted loading time of **2sec-3.5sec** when used Google's Light house to generate report.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+After optimising that gave a light house score time **1.8sec-2.4sec** scoring light house score of **`98`**.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+**Steps I took to optimise this app:**
+- Reduced image size to 90%.
+- Used components for comman components.
+- Used NextJs routing module for routers.
+- Removed un-used modules.  
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+<img src="/pagescore.jpg" alt="score" class="score-img">
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
