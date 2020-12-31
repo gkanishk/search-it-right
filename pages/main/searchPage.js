@@ -17,6 +17,7 @@ export default function SearchPage(){
         }else{
             searchTeam();
         }
+        console.log(data)
     }, [result])
 
     const searchTeam=()=>{
@@ -53,11 +54,17 @@ export default function SearchPage(){
             {
                 result
                 ?
-                    type=="Player"
+                    data.length!==0
+                    ?
+                    (type=="Player"
                     ?
                     <PlayerCard playersData={data}/>
                     :
-                    <TeamCard teamdata={data}/>
+                    <TeamCard teamdata={data}/>)
+                    :
+                    <h4>
+                        No data found
+                    </h4>
                 :
                 <img 
                 src="/images/search.svg" 

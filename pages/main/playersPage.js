@@ -28,6 +28,7 @@ export default function PlayersPage(){
             <input 
             onChange={e=>setResult(e.target.value)}
             placeholder="Search Data 🔍"
+            value={result}
             ></input>
             {
             result?
@@ -37,7 +38,18 @@ export default function PlayersPage(){
             :
             <></>}
             {/* Search Data */}
-            <PlayerCard playersData={data}/>
+            {
+                result
+                ?
+                    data.length!=0
+                    ?
+                    <PlayerCard playersData={data}/>
+                    :
+                    <h4>
+                        No Data found
+                    </h4>
+                :<></>
+            }
             {/* All player's data */}
             <PlayerCard playersData={player}/>     
         </section>

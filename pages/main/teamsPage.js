@@ -38,7 +38,18 @@ export default function TeamsPage(){
             :
             <></>}
             {/* Show Search Data */}
-            <TeamCard teamdata={data}/>
+            {
+                result
+                ?
+                    data.length!=0
+                    ?
+                    <TeamCard teamdata={data}/>
+                    :
+                    <h4>
+                        No Data found
+                    </h4>
+                :<></>
+            }
             {/* Show All Data */}
             <TeamCard teamdata={team}/>
         </section>
