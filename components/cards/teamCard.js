@@ -1,4 +1,4 @@
-export default function TeamCard(props:any){
+export default function TeamCard(props){
     const getColor=(index)=>{
         if(index%4==0)
         return "#0DA9F4";
@@ -21,10 +21,10 @@ export default function TeamCard(props:any){
             <img src="/logo.jpg" alt="logo ipl"></img>
             <h3>{data.name}</h3>
             <button>
-                <a 
+                <a
+                rel="preconnect" 
                 href={`https://www.google.com/search?q=${data.name}`} 
                 target="_blank"
-                rel="noopener noreferrer"
                 >
                 More Info
                 </a>                    

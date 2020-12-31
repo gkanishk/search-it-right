@@ -1,4 +1,4 @@
-export default function PlayerCard(props:any){
+export default function PlayerCard(props){
     const getColor=(index)=>{
         if(index%4==0)
         return "#0DA9F4";
@@ -43,7 +43,7 @@ export default function PlayerCard(props:any){
                                         <a 
                                         href={`https://www.google.com/search?q=${data.Player_Name}`} 
                                         target="_blank"
-                                        rel="noopener noreferrer"
+                                        rel="preconnect"
                                         >
                                         More Info
                                         </a>                    
