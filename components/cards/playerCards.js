@@ -1,11 +1,11 @@
 export default function PlayerCard(props){
     const getColor=(index)=>{
         if(index%4==0)
-        return "#0DA9F4";
+        return "#1A87BB";
         else if(index%4==1)
-        return "#8BC34A";
+        return "#599415";
         else if(index%4==2)
-        return "coral";
+        return "C75B0D";
         else
         return "#FEC23D";
     }
@@ -18,12 +18,12 @@ export default function PlayerCard(props){
                             <div 
                             className="player-card" 
                             style={{backgroundColor:getColor(props.playersData.indexOf(data))}}
-                            key={data.Player_Name}
+                            key={data.name}
                             >
                                 <div className="player-img-container">
                                 <img src="/man.svg" alt="person"/>
                                 <h3>
-                                        {data.Player_Name}
+                                        {data.name}
                                 </h3>
                                 </div>
                                 <div className="player-info">
@@ -41,7 +41,7 @@ export default function PlayerCard(props){
                                     </span>
                                     <button>
                                         <a 
-                                        href={`https://www.google.com/search?q=${data.Player_Name}`} 
+                                        href={`https://www.google.com/search?q=${data.name}`} 
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         >

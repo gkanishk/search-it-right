@@ -15,7 +15,7 @@ export default function PlayersPage(){
 
     const searchPlayer=()=>{
         const searchData=player.filter(playerData=>{
-            if(playerData.Player_Name.toUpperCase().includes(result.toUpperCase()))
+            if(playerData.name.toUpperCase().includes(result.toUpperCase()))
             return playerData;
         })
         setData(searchData);

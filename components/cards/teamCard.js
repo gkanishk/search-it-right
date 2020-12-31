@@ -1,9 +1,9 @@
 export default function TeamCard(props){
     const getColor=(index)=>{
         if(index%4==0)
-        return "#0DA9F4";
+        return "#1A87BB";
         else if(index%4==1)
-        return "#8BC34A";
+        return "#599415";
         else if(index%4==2)
         return "#F4443E";
         else
