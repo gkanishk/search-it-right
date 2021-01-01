@@ -18,7 +18,7 @@ export default function SearchPage(){
             searchTeam();
         }
         console.log(data)
-    }, [result])
+    }, [result,type])
 
     const searchTeam=()=>{
         const searchData=team.filter(teams=>{

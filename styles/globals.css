@@ -46,6 +46,14 @@ hr{
   border-top: 0.8px solid #eaeaea;
 }
 
+input{
+  outline-color: #4D8AF0;
+}
+
+select{
+  outline: none;
+  background-color: transparent;
+}
 @media (max-width:660px){
   pre{
     font-size: 0.7rem;
