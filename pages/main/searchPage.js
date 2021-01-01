@@ -60,11 +60,21 @@ export default function SearchPage(){
                     ?
                     data.map(data=>{
                         return (
-                            <PlayerCard playersData={data}/>
+                            <PlayerCard 
+                            playersData={data}
+                            index={player.indexOf(data)}
+                            />
                         );
                     })
                     :
-                    <TeamCard teamdata={data}/>)
+                    data.map(data=>{
+                        return (
+                            <TeamCard 
+                            playersData={data}
+                            index={team.indexOf(data)}
+                            />
+                        );
+                    }))
                     :
                     <h4>
                         No data found
