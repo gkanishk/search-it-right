@@ -61,7 +61,7 @@ export default function LandingPage(){
                         }else{
                             return (
                                 <TeamCard 
-                                playersData={data}
+                                teamsData={data}
                                 index={ipldata.indexOf(data)}
                                 />
                             );

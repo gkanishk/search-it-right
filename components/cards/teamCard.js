@@ -13,14 +13,14 @@ export default function TeamCard(props){
         <div 
             className="team-card" 
             style={{backgroundColor:getColor(props.index)}}
-            key={props.playersData.name}
+            key={props.teamsData.name}
             >
             <img src="/logo.jpg" alt="logo ipl"></img>
-            <h3>{props.playersData.name}</h3>
+            <h3>{props.teamsData.name}</h3>
             <button className="button-main">
                 <a
                 rel="noopener noreferrer"
-                href={`https://www.google.com/search?q=${props.playersData.name}`} 
+                href={`https://www.google.com/search?q=${props.teamsData.name}`} 
                 target="_blank"
                 >
                 More Info

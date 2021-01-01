@@ -44,18 +44,24 @@ export default function PlayersPage(){
                 ?
                     data.length!=0
                     ?
-                    data.map(data=>{
+                    <>
+                    {data.map(data=>{
                         return (
                             <PlayerCard 
                             playersData={data}
                             index={player.indexOf(data)}
                             />
                         );
-                    })
+                    })}
+                    <hr/>
+                    </>
                     :
+                    <>
                     <h4>
                         No Data found
                     </h4>
+                    <hr/>
+                    </>
                 :<></>
             }
             </div>

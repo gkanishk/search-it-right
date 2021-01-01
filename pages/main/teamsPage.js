@@ -45,18 +45,24 @@ export default function TeamsPage(){
                 ?
                     data.length!=0
                     ?
-                    data.map(data=>{
+                    <>
+                    {data.map(data=>{
                         return (
                             <TeamCard 
-                            playersData={data}
+                            teamsData={data}
                             index={team.indexOf(data)}
                             />
                         );
-                    })
+                    })}
+                    <hr/>
+                    </>
                     :
+                    <>
                     <h4>
                         No Data found
                     </h4>
+                    <hr/>
+                    </>
                     
                 :<></>
             }
@@ -67,7 +73,7 @@ export default function TeamsPage(){
                 team.map(data=>{
                             return (
                                 <TeamCard 
-                                playersData={data}
+                                teamsData={data}
                                 index={team.indexOf(data)}
                                 />
                             );

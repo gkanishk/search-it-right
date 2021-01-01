@@ -41,6 +41,11 @@ pre{
   margin: auto;
 }
 
+hr{
+  width: 100%;
+  border-top: 0.8px solid #eaeaea;
+}
+
 @media (max-width:660px){
   pre{
     font-size: 0.7rem;

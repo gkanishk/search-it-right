@@ -70,7 +70,7 @@ export default function SearchPage(){
                     data.map(data=>{
                         return (
                             <TeamCard 
-                            playersData={data}
+                            teamsData={data}
                             index={team.indexOf(data)}
                             />
                         );
